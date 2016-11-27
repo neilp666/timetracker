@@ -14,4 +14,5 @@ Features
 - SMS sending
 - Admin dashboard
 - Email summary
+- Only Admin can create user accounts
 
