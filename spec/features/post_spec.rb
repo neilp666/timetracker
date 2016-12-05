@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'navigate' do
   before do
       @user = FactoryGirl.create(:user)
-      login_as(user, :scope => :user)
+      login_as(@user, :scope => :user)
     end
 
   describe 'index' do
@@ -23,7 +23,7 @@ describe 'navigate' do
       post1 = FactoryGirl.build_stubbed(:post)
       post2 = FactoryGirl.build_stubbed(:second_post)
       visit posts_path
-      expect(page).to have_content(/Rationale|content/)
+      expect(page).to have_content(/Description|content/)
     end
   end
 
@@ -48,7 +48,7 @@ describe 'navigate' do
       fill_in 'post[date]', with: Date.today
       fill_in 'post[description]', with: "User Association"
       click_on "Save"
-      expect(User.last.posts.last.description).to eq("User_Association")
+      expect(User.last.posts.last.description).to eq("User Association")
   end
 end
 end
