@@ -11,6 +11,7 @@ Models
 Features
 
 - Approval Workflow
+- Block non admin and guest guest users.
 - SMS sending
 - Admin dashboard
 - Email summary
