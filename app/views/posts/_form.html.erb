@@ -16,6 +16,17 @@
     <%= f.text_area :description, class: "form-control" %>
   </div>
 
+  <div class="form-group">
+    <%= f.label :status, 'Submitted' %>
+    <%= f.radio_button :status, 'submitted' %>
+
+    <%= f.label :status, 'Approved' %>
+    <%= f.radio_button :status, 'approved' %>
+
+    <%= f.label :status, 'Rejected' %>
+    <%= f.radio_button :status, 'rejected' %>
+  </div>
+
   <%= f.submit 'Save', class: 'btn btn-primary btn-block' %>
 
 <% end %>
