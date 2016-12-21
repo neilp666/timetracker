@@ -16,6 +16,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'gritter', '1.2.0'
 gem 'administrate', github: 'greetpoint/administrate', branch: 'rails5'
 gem 'bourbon', '~> 4.2', '>= 4.2.7'
+gem 'pundit', '~> 1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
