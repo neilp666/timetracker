@@ -25,6 +25,8 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem "factory_girl_rails", "~> 4.0"
+  gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
+  gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 end
 
