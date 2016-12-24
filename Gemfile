@@ -17,6 +17,7 @@ gem 'gritter', '1.2.0'
 gem 'administrate', github: 'greetpoint/administrate', branch: 'rails5'
 gem 'bourbon', '~> 4.2', '>= 4.2.7'
 gem 'pundit', '~> 1.1'
+gem 'kaminari', '~> 0.17.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

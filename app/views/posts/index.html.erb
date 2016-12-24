@@ -27,3 +27,7 @@
     <%= render @posts %>
   </tbody>
 </table>
+
+<div id="paginator">
+  <%= paginate @posts, remote: true %>
+</div>
