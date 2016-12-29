@@ -42,5 +42,10 @@ RSpec.describe User, type: :model do
       expect(@user.full_name).to eq("SNOW, JON")
      end
     end
+
+    describe 'relationship between admins and employees' do
+      it 'allows for admins to be associated with multiple employees' do
+        employee_1 = 
+    end
   end
 end
