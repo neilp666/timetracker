@@ -10,15 +10,15 @@ RSpec.describe Post, type: :model do
       expect(@post).to be_valid
     end
 
-    it 'cannot be created without a date and description and overtime_request' do
+    it 'cannot be created without a date and description and daily_hours' do
       @post.date = nil
       @post.description = nil
-      @post.overtime_request = nil
+      @post.daily_hours= nil
       expect(@post).to_not be_valid
     end
 
     it 'has an overtime_request greater than 0.0' do
-      @post.overtime_request = 0.0
+      @post.daily_hours = 0.0
       expect(@post).to_not be_valid
     end
   end
